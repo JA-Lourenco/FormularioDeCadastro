@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+
+    <div class="base">
+
+        <div class="title">
+            <header>
+                <h1> <strong>Cadastro de Hardware</strong> </h1>
+
+                <p>Preencha os campos abaixo para cadastrar um item no estoque</p>
+            </header>
+        </div>
+
+        <main>
+
+            <form method="GET">
+
+                <div class="pd">
+                    <label for="name">Nome:</label>
+                        <input id="name" type="text" name="name" placeholder="Insira seu Nome" required>
+                
+                    <label for="surname">Sobrenome:</label>
+                        <input id="surname" type="text" name="surname" placeholder="Sobrenome" required>
+                </div>
+                
+                <div class="reg">
+                    <label for="register">Qual o número da sua matrícula?</label>
+                    <input id="register" type="number" name="registration" placeholder="Somente números" min="1" required>
+                </div>
+
+                <div class="selcomp">
+                    <label for="compsel">Selecione o componente:</label>
+                
+                    <select id="compsel" name="type" required>
+                        <option disabled selected value="select">Selecione o tipo</option>
+
+                        <option value="powersupply">Fonte</option>
+
+                        <option value="hdd">Hard Disk (HD)</option>
+
+                        <option value="ram">Memória RAM</option>
+
+                        <option value="gpu">Placa de Vídeo</option>
+
+                        <option value="mobo">Placa Mãe</option>
+
+                        <option value="cpu">Processador</option>
+                        
+                        <option value="ssd">Solid State Drive (SSD)</option>
+                    </select>
+                </div>
+
+                <div class="comp">                
+                    <label id="comptitle">Selecione a marca do componente:</label>
+
+                    <label>
+                        <input type="radio" name="brand" value="amd">AMD
+                    </label>
+
+                    <label>
+                        <input type="radio" name="brand" value="Asgard">Asgard
+                    </label>
+
+                    <label>
+                        <input type="radio" name="brand" value="asrock">ASRock
+                    </label>    
+                    
+                    <label>
+                        <input type="radio" name="brand" value="asus">ASUS
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="brand" value="coolermaster">Cooler Master
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="brand" value="corsair">Corsair
+                    </label>
+
+                    <label>
+                        <input type="radio" name="brand" value="evga">EVGA
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="brand" value="gigabyte">Gigabyte
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="brand" value="intel">Intel
+                    </label>
+
+                    <label>
+                        <input type="radio" name="brand" value="KingSpec">KingSpec
+                    </label>
+
+                    <label>
+                        <input type="radio" name="brand" value="msi">MSI
+                    </label>
+
+                    <label>
+                        <input type="radio" name="brand" value="samsung">Samsung
+                    </label>
+
+                    <label>
+                        <input type="radio" name="brand" value="xpg">XPG
+                    </label>
+
+                    <label>
+                        <input type="radio" name="brand" value="wd">Western Digital
+                    </label>
+                </div>
+                
+                <div class="qtde">
+                    <label for="qtd" required>Quantidade:</label>
+                        <input id="qtd" type="number" name="qtd" value="amount" placeholder="Somente números" min="1">
+                </div>
+
+                <div class="obs">
+                    <label for="obs">Observações:</label><br>
+                
+                    <textarea id="obs" name="obs" cols="50" rows="10" placeholder="Ex: Fonte 500W, CPU 6/12, SSD 512GB, etc."></textarea>
+                </div>
+
+                <button type="reset">LIMPAR DADOS</button>
+                
+                <button type="submit">REGISTRAR ITEM</button> 
+
+            </form>
+
+        </main>
+        
+        
+    </div>
+
+    <footer>
+
+        <abbr title="Perfil do Linkedin"><a href="https://www.linkedin.com/in/ja-lourenco/" target="_blank" rel="external"><img id="linkedin" src="assets/linkedin.png" alt="Linkedin"></a></abbr>
+
+        <abbr title="Contato via Email"><a href="mailto:ja.lourenco@outlook.com"><img id="mail" src="assets/mail.png" alt="email"></a></abbr>
+
+        <abbr title="Perfil do Github"><a href="https://github.com/JA-Lourenco" target="_blank" rel="external"><img id="github" src="assets/github.png" alt=""></a></abbr>
+        
+    </footer>
+    
+</body>
+
+</html>

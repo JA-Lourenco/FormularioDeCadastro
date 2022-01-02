@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #b6cbef;
+    font-family: 'Roboto Slab', serif;
+    font-size: 100%;
+    color: white;
+}
+
+.base{
+    background-color: #060630;
+    margin: auto;
+    text-align: center;
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    border-radius: 30px;
+}
+
+.title{
+    max-width: 65%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 2vh;
+    border-bottom: 1.5px dashed white;
+}
+
+.pd, .reg, .selcomp, .comp, .qtde{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.8vh;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px white;
+}
+
+.pd input{
+    margin-right: 10px;
+}
+
+.comp label{
+    display: block;
+    text-align: left;
+    padding: 5px;
+}
+
+.comp label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#comptitle{
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1.5px dashed white;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: text;
+}
+
+.obs{
+    font-size: 1.8vh;
+    margin-top: 15px;
+    border: none;
+}
+
+.obs textarea{
+    box-shadow: 2px 2px 8px white; 
+}
+
+input, select, button, textarea{
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+}
+
+input:hover, button:hover, select:hover, textarea:hover{
+    background-color: #b6cbef;
+}
+
+button{
+    margin: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 1000;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px white;    
+}
+
+button[type="submit"]:hover{
+    box-shadow: 2px 2px 10px #3cb371;
+    background-color: #3cb371;
+    color: white;
+}
+
+button[type="reset"]:hover{
+    box-shadow: 2px 2px 8px #ff63478f;
+    background-color: #ff63478f;
+    color: white;
+}
+
+button[type="submit"]:active{
+    color: #3cb371;
+    background-color: white;
+}
+
+button[type="reset"]:active{
+    color: firebrick;
+    background-color: white;
+}
+
+footer{
+    max-width: 250px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 2px 2px 8px white;
+}
+
+#linkedin{
+    width: 50px;
+    float: left;
+}
+
+#mail{
+    width: 50px;
+}
+
+#github{
+    width: 50px;
+    float: right;
+}
+
+#mail:hover{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #b6cbef;
+    background-color: #b6cbef;
+}
+
+#linkedin:hover, #github:hover{
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px #b6cbef;
+    background-color: #b6cbef;
+}
+
+@media screen and (max-width: 1050px) {
+    
+    .title{
+        font-size: 100%;
+    }
+
+    .pd, .reg, .selcomp, .comp, .qtde, .obs{
+        font-size: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+  
+    .base{
+        max-width: 95%;
+    }
+
+    .title{
+        font-size: 100%;
+    }
+
+    .title p{
+        font-size: 95%;
+    }
+
+    .pd, .reg, .comp, .selcomp, .qtde{
+        text-align: center;
+        width: 60%;
+    }
+
+    .pd label{
+        display: block;
+        
+    }
+
+    input, select{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        width: 200px;
+    }
+
+    #linkedin, #mail, #github{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .base{
+        max-width: 95%;
+    }
+
+    .title{
+        font-size: 100%;
+    }
+
+    .title p{
+        font-size: 80%;
+    }
+
+    .pd, .reg, .comp, .selcomp, .qtde{
+        max-width: 60%;
+        text-align: center;
+    }
+    
+    .obs textarea{
+        max-width: 70%;
+    }
+
+    button{
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        width: 150px;
+    }
+
+    #linkedin, #mail, #github{
+        width: 30px;
+    }
+}   
+
+@media screen and (max-width: 350px) {
+
+    .base{
+        max-width: 95%;
+    }
+
+    .title{
+        font-size: 100%;
+    }
+
+    .title p{
+        font-size: 80%;
+    }
+
+    .pd, .reg, .comp, .selcomp, .qtde{
+        max-width: 60%;
+        text-align: center;
+    }
+    
+    .obs textarea{
+        max-width: 70%;
+    }
+
+    button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90px;
+    }
+
+    footer{
+        width: 150px;
+    }
+
+    #linkedin, #mail, #github{
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .base{
+        max-width: 95%;
+    }
+
+    .title{
+        font-size: 80%;
+    }
+
+    .title p{
+        font-size: 80%;
+    }
+
+    .pd, .reg, .comp, .selcomp, .qtde{
+        font-size: 80%;
+        max-width: 60%;
+        text-align: center;
+    }
+    
+    .obs{
+        font-size: 80%;
+    }
+
+    .obs textarea{
+        max-width: 70%;
+    }
+
+    button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90px;
+    }
+
+    footer{
+        width: 110px;
+    }
+
+    #linkedin, #mail, #github{
+        width: 30px;
+    }
+
+    input, select{
+        max-width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
